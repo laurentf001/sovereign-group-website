@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build
+.next
+out
+dist
+.turbo
+
+# Env
+.env
+.env.local
+.env*.local
+
+# IDE
+.DS_Store
+*.log

@@ -1,0 +1,17 @@
+{
+  "name": "sovereign-group",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:sc": "turbo dev --filter=sovereign-capital",
+    "dev:rt": "turbo dev --filter=retirement247",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "start": "turbo start"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
