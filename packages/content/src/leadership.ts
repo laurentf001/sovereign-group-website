@@ -43,6 +43,6 @@ export const retirement247Team: Leader[] = [
     name: "Arthur Case",
     title: "CEO · Sovereign Senior Living",
     initials: "AC",
-    bio: "Former CEO of Evergreen Lifestyles (Amdec Group) — developed, commissioned and operated 7 retirement villages over 12 years. Career spanning Anglo American, Nedbank, Southern Life Association, and Deloitte across South Africa and the Middle East. Former Managing Director of MediCor Hospital Group (sold to MediClinic). The most operationally experienced life rights executive in South Africa.",
+    bio: "Former CEO of Evergreen Lifestyles (Amdec Group). Developed, commissioned and operated 7 retirement villages over 12 years. Career spanning Anglo American, Nedbank, Southern Life Association, and Deloitte across South Africa and the Middle East. Former Managing Director of MediCor Hospital Group (sold to MediClinic). The most operationally experienced life rights executive in South Africa.",
   },
 ];

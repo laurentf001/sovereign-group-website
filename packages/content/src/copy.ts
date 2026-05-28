@@ -59,10 +59,16 @@ export const sovereignCapitalCopy = {
 
 export const retirement247Copy = {
   hero: {
+    eyebrow: "Life Rights Advisory · South Africa & Mauritius",
     subline: "Strategy · Design · Marketing · Sales",
     headline: "Life rights expertise. Always on.",
+    headlineEmphasis: "Always on.",
     intro:
-      "Retirement 24Seven is South Africa's specialist life rights advisory and sales platform. We work with developers, landowners, funds, and REITs who want to enter or grow in the senior living sector — without the cost of learning it the hard way.",
+      "We work with developers, landowners, funds, and REITs entering senior living, without the cost of learning the model the hard way.",
+    missionQuote:
+      "An exceptional lived experience for life right holders, and a well-managed asset for the investor.",
+    primaryCta: { label: "Speak to Us", href: "/contact" },
+    secondaryCta: { label: "Explore our services", href: "#services" },
   },
   opportunity: {
     label: "THE OPPORTUNITY",
@@ -74,14 +80,22 @@ export const retirement247Copy = {
       { value: "R80–100B", label: "Total market value" },
     ],
     statement:
-      "Active mandates across the Winelands, the Garden Route, and into Mauritius — secured through direct relationship, not competitive pitch.",
+      "Active mandates across the Winelands, the Garden Route, and into Mauritius, secured through direct relationship, not competitive pitch.",
   },
   whyLifeRights: {
+    headline: "Why the life rights model is structurally different",
+    returnsPanelLabel: "Developer returns at a glance",
+    ctaLabel: "Read the full model",
+    ctaHref: "/why-life-rights",
     pullQuote:
-      "The life right model, when ethically applied, offers a fair exchange — and a compounding long-term asset for the owner.",
+      "The life right model, when ethically applied, offers a fair exchange, and a compounding long-term asset for the owner.",
+    homepageParagraphs: [
+      "A life right grants the purchaser the right to occupy a unit for life, protected by the Housing Development Schemes for Retired Persons Act No. 65 of 1988. The developer retains ownership of the underlying asset in perpetuity.",
+      "This creates a fundamentally different commercial structure from sectional title or freehold development: an interest-free loan at entry, profit on every resale, and 8–10% annual unit churn from Year 5 creating a recurring, inflation-linked income stream.",
+    ],
     paragraphs: [
       "A life right grants the purchaser the right to occupy a unit for life, protected by the Housing Development Schemes for Retired Persons Act No. 65 of 1988. The developer retains ownership of the underlying asset in perpetuity.",
-      "This creates a fundamentally different commercial structure from sectional title or freehold development. The developer receives an interest-free loan at entry — sufficient to settle land and development debt — and retains the profit on every resale as the village matures. At maturity, life right unit churn of 8–10% per annum creates a recurring, inflation-linked income stream that grows in real terms with every cycle.",
+      "This creates a fundamentally different commercial structure from sectional title or freehold development. The developer receives an interest-free loan at entry, sufficient to settle land and development debt, and retains the profit on every resale as the village matures. At maturity, life right unit churn of 8–10% per annum creates a recurring, inflation-linked income stream that grows in real terms with every cycle.",
       "No transfer duty. No VAT. No bad debt. No special levies. A tax regime treated favourably under the Brummeria judgment. And a resident base that is contractually aligned with the asset owner's long-term interests.",
     ],
     returnStats: [
@@ -101,23 +115,23 @@ export const retirement247Copy = {
     ],
     assetOwnerBullets: [
       "Developer return on cost of ~20% on first-round greenfield sales",
-      "Interest-free loan from the purchaser at registration — sufficient to settle land and development debt",
+      "Interest-free loan from the purchaser at registration, sufficient to settle land and development debt",
       "Once-off Brummeria tax treatment on entry; ongoing income taxed at approximately 3%",
       "Repayment of the loan only on resale and registration of a replacement life right",
       "Profit on every resale retained by the asset owner as a realised fair value gain",
       "Life right assets held on balance sheet, appreciating annually (unrealised fair value gain)",
-      "8–10% unit churn per annum from Year 5 — recurring, compounding annuity income",
+      "8–10% unit churn per annum from Year 5, recurring, compounding annuity income",
       "Operating costs recovered via resident levies once fully occupied",
-      "No bad debt — the owner may access life right capital to settle levy arrears",
+      "No bad debt: the owner may access life right capital to settle levy arrears",
     ],
     residentBullets: [
       "Security of tenure for life under the Housing Development Schemes for Retired Persons Act No. 65 of 1988",
-      "No transfer duty, no VAT, no bond registration fees — significant saving vs sectional title",
-      "No special levies — a statutory protection with real financial consequence",
-      "Interests aligned with the asset owner — no perverse incentives",
+      "No transfer duty, no VAT, no bond registration fees, a significant saving vs sectional title",
+      "No special levies, a statutory protection with real financial consequence",
+      "Interests aligned with the asset owner, with no perverse incentives",
       "Managed retirement lifestyle with communal facilities and professional estate management",
       "Access to continuous healthcare solutions via on-site or integrated facilities",
-      "Community and security — particularly meaningful when family is absent or distant",
+      "Community and security, particularly meaningful when family is absent or distant",
       "80–100% of original purchase price returned to estate on termination",
       "75% resident consent required for any sale of the underlying property",
     ],
@@ -128,23 +142,82 @@ export const retirement247Copy = {
   },
   whoWeServe: {
     label: "WHO WE SERVE",
-    headline: "We work with the right partners. Not all of them.",
+    headline: "Built for principals with a long-term orientation",
     intro:
-      "Our mandates are selective. We engage with principals who have a genuine long-term orientation — landowners who care about their legacy, developers who understand that a retirement village is a 30-year commitment, and investors who want institutional-grade returns without operational shortcuts.",
+      "We take mandates we can stand behind for 30 years: landowners who care about their legacy, developers who understand that a retirement village is a long-term commitment, and investors who want institutional-grade returns without operational shortcuts.",
     audiences: [
       {
         title: "Landowners & Families",
-        body: "Generational landowners — wine estates, farm holdings, coastal properties — who want to unlock long-term value from an under-utilised asset without a short-cycle developer's exit strategy. We structure the partnership and manage the complexity.",
+        quote:
+          "I have the land and the legacy. I need a partner who won't treat this as a short-cycle development.",
+        body: "Generational landowners, from wine estates and farm holdings to coastal properties, who want to unlock long-term value without a short-cycle developer's exit strategy. We structure the partnership and manage the complexity.",
+        ctaLabel: "See landowner benefits",
+        ctaHref: "/who-we-serve",
       },
       {
         title: "Developers & Investors",
-        body: "Property developers entering the retirement sector for the first time, and investors building senior living portfolios who need specialist advisory alongside their capital. We provide the operational intelligence that makes the numbers real.",
+        quote:
+          "The numbers work on paper. I need someone who's done this before the residents move in.",
+        body: "Developers entering retirement for the first time, and investors building senior living portfolios who need specialist advisory alongside their capital. We provide the operational intelligence that makes the numbers real.",
+        ctaLabel: "See developer benefits",
+        ctaHref: "/who-we-serve",
       },
       {
         title: "Funds & REITs",
-        body: "Institutional funds and REITs who own retirement assets but lack the specific skills or appetite for day-to-day asset management and resident liaison. We take on the operational complexity so they can focus on portfolio performance.",
+        quote:
+          "We own the asset. We don't want to run the village, but we need it run properly.",
+        body: "Institutional funds and REITs who own retirement assets but lack the appetite for day-to-day asset management and resident liaison. We take on the operational complexity so they can focus on portfolio performance.",
+        ctaLabel: "See fund benefits",
+        ctaHref: "/who-we-serve",
       },
     ],
+  },
+  commercialPillars: [
+    {
+      title: "Asset Management",
+      outcome:
+        "Levy, finance, governance, and compliance: the asset stays institutional-grade.",
+      chips: ["Levy collections", "Financial management", "Governance", "Compliance"],
+    },
+    {
+      title: "Operations Management",
+      outcome:
+        "Estate management, care, and daily life: the lived experience residents feel.",
+      chips: ["Estate management", "Care services", "Food & beverage", "Social activities"],
+    },
+    {
+      title: "Strategic Advisory",
+      outcome:
+        "Acquisition, design, sales, and exit: the decisions that determine whether the numbers work.",
+      chips: ["Site acquisition", "Village design", "Sales management", "Strategic exit"],
+    },
+  ],
+  processSteps: {
+    headline: "How we engage",
+    steps: [
+      {
+        number: "01",
+        title: "Assess",
+        body: "Site, market, and mandate fit, before any commitment.",
+      },
+      {
+        number: "02",
+        title: "Structure",
+        body: "Model, agreements, governance, and financials, built on real transaction experience.",
+      },
+      {
+        number: "03",
+        title: "Operate",
+        body: "Launch, sales, resident experience, and ongoing asset management.",
+      },
+    ],
+  },
+  closingCta: {
+    headline: "The life rights model suits your site. Let's run the numbers.",
+    subline:
+      "Conversations begin with a site, a mandate, and a long-term orientation.",
+    primaryCta: { label: "Speak to Us", href: "/contact" },
+    secondaryCta: { label: "Meet the team", href: "/team" },
   },
   contact: {
     headline: "The life rights model suits your site. Let's run the numbers.",
@@ -152,5 +225,31 @@ export const retirement247Copy = {
   team: {
     label: "THE TEAM",
     headline: "Decades of experience. One focused mandate.",
+  },
+  pages: {
+    whyLifeRights: {
+      eyebrow: "Why Life Rights · Retirement 247",
+      intro:
+        "The structural case for life rights as a long-duration asset class, for owners, developers, and funds.",
+      modelHeadline: "For the asset owner and the resident",
+    },
+    services: {
+      eyebrow: "Services · Retirement 247",
+      intro:
+        "Nine disciplines of specialist support, from first strategic conversation through to exit.",
+    },
+    whoWeServe: {
+      eyebrow: "Who We Serve · Retirement 247",
+    },
+    team: {
+      eyebrow: "Team · Retirement 247",
+      intro:
+        "Principals with decades of life rights development, operations, and transaction experience.",
+    },
+    contact: {
+      eyebrow: "Contact · Retirement 247",
+      intro:
+        "Whether you have a site under consideration or an asset that needs better management, start with a conversation.",
+    },
   },
 };

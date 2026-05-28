@@ -2,7 +2,7 @@ import type { Leader } from "@sovereign/content";
 
 export function LeadershipRow({ leader }: { leader: Leader }) {
   return (
-    <article className="border-t border-navy/15 py-10 md:py-12">
+    <article className="border-t border-gold/30 py-10 md:py-12">
       <div className="flex gap-8">
         {/* Placeholder: initials monogram until photography available */}
         <div

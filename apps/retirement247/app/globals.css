@@ -8,6 +8,12 @@
   }
 
   body {
-    @apply bg-cream font-body text-navy antialiased;
+    @apply font-body text-navy antialiased;
+    background-color: var(--color-cream);
+    background-image: linear-gradient(
+      180deg,
+      rgb(var(--color-ivory-rgb) / 0.35) 0%,
+      var(--color-cream) 100%
+    );
   }
 }

@@ -1,65 +1,62 @@
 import type { Metadata } from "next";
 import { retirement247Copy, retirement247Images } from "@sovereign/content";
 import {
+  CTABand,
   EditorialImageBreak,
+  InnerPageHero,
   ModelAccordion,
-  PageHero,
-  PullQuote,
-  SectionRule,
   SectionShell,
-  StatRow,
+  StatBand,
+  WhyLifeRightsProof,
 } from "@sovereign/ui";
 
 export const metadata: Metadata = {
   title: "Why Life Rights",
   description:
-    "Why the life rights model is structurally different — for asset owners, developers, and funds.",
+    "Why the life rights model is structurally different, for asset owners, developers, and funds.",
 };
 
 export default function WhyLifeRightsPage() {
   const copy = retirement247Copy;
+  const page = copy.pages.whyLifeRights;
 
   return (
     <>
-      <PageHero
-        breadcrumb="Retirement 247 → Why Life Rights"
+      <InnerPageHero
+        eyebrow={page.eyebrow}
         headline={copy.opportunity.headline}
+        intro={page.intro}
+        primaryCta={copy.closingCta.primaryCta}
       />
+
+      <StatBand stats={copy.opportunity.stats} />
+
+      <SectionShell theme="light">
+        <WhyLifeRightsProof
+          headline={copy.whyLifeRights.headline}
+          pullQuote={copy.whyLifeRights.pullQuote}
+          paragraphs={copy.whyLifeRights.paragraphs}
+          returnStats={copy.whyLifeRights.returnStats}
+          returnsPanelLabel={copy.whyLifeRights.returnsPanelLabel}
+          ctaLabel={copy.whyLifeRights.ctaLabel}
+          ctaHref={copy.whyLifeRights.ctaHref}
+          showCta={false}
+          showHeadline={false}
+        />
+      </SectionShell>
 
       <EditorialImageBreak
         src={retirement247Images.careHands.src}
         alt={retirement247Images.careHands.alt}
+        caption={retirement247Images.careHands.caption}
         overlay="navy"
         aspect="wide"
       />
 
-      <SectionShell theme="light">
-        <StatRow stats={copy.opportunity.stats} />
-      </SectionShell>
-
       <SectionShell theme="dark">
-        <SectionRule number="01" label="THE MODEL" theme="dark" />
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <PullQuote theme="dark">{copy.whyLifeRights.pullQuote}</PullQuote>
-            <div className="mt-8 space-y-6">
-              {copy.whyLifeRights.paragraphs.map((p) => (
-                <p key={p.slice(0, 30)} className="t-body text-steel">
-                  {p}
-                </p>
-              ))}
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            {copy.whyLifeRights.returnStats.map((stat) => (
-              <div key={stat.label}>
-                <p className="t-stat text-ivory">{stat.value}</p>
-                <p className="t-caption mt-3 text-steel">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
+        <h2 className="t-headline mb-10 max-w-[24ch] text-ivory">
+          {page.modelHeadline}
+        </h2>
         <ModelAccordion
           assetOwnerTitle="For the Asset Owner"
           assetOwnerBullets={copy.whyLifeRights.assetOwnerBullets}
@@ -67,6 +64,13 @@ export default function WhyLifeRightsPage() {
           residentBullets={copy.whyLifeRights.residentBullets}
         />
       </SectionShell>
+
+      <CTABand
+        headline={copy.closingCta.headline}
+        subline={copy.closingCta.subline}
+        primaryCta={copy.closingCta.primaryCta}
+        secondaryCta={copy.closingCta.secondaryCta}
+      />
     </>
   );
 }

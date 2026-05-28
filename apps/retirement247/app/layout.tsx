@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Retirement 247 — Life Rights Expertise. Always On.",
+    default: "Retirement 247 · Life Rights Expertise. Always On.",
     template: "%s · Retirement 247",
   },
   description:

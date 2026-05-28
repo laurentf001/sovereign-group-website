@@ -88,7 +88,7 @@ export function EditorialImagePanel({
 }: EditorialImagePanelProps) {
   return (
     <div
-      className={`relative min-h-[280px] overflow-hidden md:min-h-[420px] ${
+      className={`relative min-h-[320px] overflow-hidden md:min-h-full md:min-h-[520px] ${
         position === "left" ? "md:order-first" : ""
       } ${className}`}
     >

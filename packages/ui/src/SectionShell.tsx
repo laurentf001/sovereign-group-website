@@ -20,13 +20,10 @@ export function SectionShell({
   id,
   fullBleed = false,
 }: SectionShellProps) {
-  const bg = theme === "dark" ? "bg-navy" : "bg-cream";
-  const text = theme === "dark" ? "text-ivory" : "text-navy";
-
   return (
     <section
       id={id}
-      className={`py-16 md:py-24 ${bg} ${text} ${className}`}
+      className={`py-16 md:py-24 ${theme === "dark" ? "navy-surface text-ivory" : "cream-surface text-navy"} ${className}`}
     >
       <motion.div
         initial={{ opacity: 0, y: 24 }}

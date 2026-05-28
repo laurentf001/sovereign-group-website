@@ -49,7 +49,7 @@ export const consortiumQuote =
 export const rt247ConsortiumBlock = {
   label: "Part of the Sovereign Capital Group",
   headline: "Advisory is only part of what we bring.",
-  body: "Retirement 24Seven operates as the specialist advisory and sales arm of the Sovereign Capital Group — a private capital consortium that also provides insurance-backed operating infrastructure through Absolute Life, and access to institutional finance through our collaboration with Fedgroup. For the right mandate, we are not just advisors. We are co-investors.",
+  body: "Retirement 24Seven operates as the specialist advisory and sales arm of the Sovereign Capital Group, a private capital consortium that also provides insurance-backed operating infrastructure through Absolute Life, and access to institutional finance through our collaboration with Fedgroup. For the right mandate, we are not just advisors. We are co-investors.",
   entities: [
     { name: "Sovereign Capital", role: "Holding Co · Finance" },
     { name: "Absolute Life", role: "Operating Platform" },

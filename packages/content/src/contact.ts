@@ -39,6 +39,6 @@ export const retirement247Contact = {
   },
   ctaTitle: "Start with a conversation",
   ctaBody:
-    "Whether you have a site under consideration, a development in feasibility, or an existing retirement asset that needs better management — we are ready to engage. We will tell you honestly whether the life rights model is the right structure, and what it would take to make it work.",
+    "Whether you have a site under consideration, a development in feasibility, or an existing retirement asset that needs better management, we are ready to engage. We will tell you honestly whether the life rights model is the right structure, and what it would take to make it work.",
   tagline: "Strategy · Design · Marketing · Sales",
 };

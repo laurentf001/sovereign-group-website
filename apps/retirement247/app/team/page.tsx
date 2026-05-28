@@ -5,10 +5,10 @@ import {
   retirement247Team,
 } from "@sovereign/content";
 import {
+  CTABand,
   EditorialImageBreak,
+  InnerPageHero,
   LeadershipList,
-  PageHero,
-  SectionRule,
   SectionShell,
 } from "@sovereign/ui";
 
@@ -19,22 +19,34 @@ export const metadata: Metadata = {
 
 export default function TeamPage() {
   const copy = retirement247Copy.team;
+  const page = retirement247Copy.pages.team;
 
   return (
     <>
-      <PageHero breadcrumb="Retirement 247 → Team" headline={copy.headline} />
+      <InnerPageHero
+        eyebrow={page.eyebrow}
+        headline={copy.headline}
+        intro={page.intro}
+        primaryCta={retirement247Copy.closingCta.primaryCta}
+      />
 
       <EditorialImageBreak
-        src={retirement247Images.friendsLaughing.src}
-        alt={retirement247Images.friendsLaughing.alt}
+        src={retirement247Images.communityJoy.src}
+        alt={retirement247Images.communityJoy.alt}
         overlay="dark"
         aspect="wide"
       />
 
       <SectionShell theme="light">
-        <SectionRule number="01" label={copy.label} />
         <LeadershipList leaders={retirement247Team} />
       </SectionShell>
+
+      <CTABand
+        headline={retirement247Copy.closingCta.headline}
+        subline={retirement247Copy.closingCta.subline}
+        primaryCta={retirement247Copy.closingCta.primaryCta}
+        secondaryCta={{ label: "Explore our services", href: "/services" }}
+      />
     </>
   );
 }

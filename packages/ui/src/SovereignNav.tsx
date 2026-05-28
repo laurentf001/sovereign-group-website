@@ -56,7 +56,7 @@ export function SovereignNav({ variant }: SovereignNavProps) {
   }, [mobileOpen]);
 
   const navBg = scrolled
-    ? "border-b border-ivory/10 bg-navy/95 backdrop-blur-sm"
+    ? "border-b border-ivory/10 navy-surface backdrop-blur-sm"
     : "bg-transparent";
 
   return (
@@ -90,11 +90,27 @@ export function SovereignNav({ variant }: SovereignNavProps) {
           </Link>
 
           <ul className="hidden items-center gap-8 lg:flex">
-            {links.map((link) => (
-              <li key={link.href}>
-                <NavLinkItem link={link} />
-              </li>
-            ))}
+            {links.map((link, index) => {
+              const isCta =
+                variant === "retirement247" &&
+                index === links.length - 1 &&
+                link.href === "/contact";
+
+              return (
+                <li key={link.href}>
+                  {isCta ? (
+                    <Link
+                      href={link.href}
+                      className="t-label bg-ivory px-5 py-2.5 text-navy transition-colors hover:bg-cream"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <NavLinkItem link={link} />
+                  )}
+                </li>
+              );
+            })}
           </ul>
 
           <button
@@ -111,17 +127,28 @@ export function SovereignNav({ variant }: SovereignNavProps) {
       {mobileOpen && (
         <div className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-navy lg:hidden">
           <ul className="flex flex-col items-center gap-8">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="font-display text-[32px] text-ivory transition-colors hover:text-gold"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            {links.map((link, index) => {
+              const isCta =
+                variant === "retirement247" &&
+                index === links.length - 1 &&
+                link.href === "/contact";
+
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={
+                      isCta
+                        ? "t-label bg-ivory px-6 py-3 text-navy"
+                        : "font-display text-[32px] text-ivory transition-colors hover:text-gold"
+                    }
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
