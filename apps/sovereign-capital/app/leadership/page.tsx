@@ -3,9 +3,11 @@ import {
   sovereignCapitalContact,
   sovereignCapitalCopy,
   sovereignCapitalLeadership,
+  sovereignCapitalPageImages,
 } from "@sovereign/content";
 import {
   ContactBlock,
+  EditorialImageBreak,
   LeadershipList,
   PageHero,
   SectionRule,
@@ -24,6 +26,12 @@ export default function LeadershipPage() {
   return (
     <>
       <PageHero label={copy.label} headline={copy.headline} />
+
+      <EditorialImageBreak
+        src={sovereignCapitalPageImages.leadershipStudy.src}
+        alt={sovereignCapitalPageImages.leadershipStudy.alt}
+        aspect="wide"
+      />
 
       <SectionShell theme="light">
         <LeadershipList leaders={sovereignCapitalLeadership} />

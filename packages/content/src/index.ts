@@ -6,4 +6,5 @@ export * from "./contact";
 export * from "./copy";
 export * from "./retirement247-images";
 export * from "./sovereign-capital-images";
+export * from "./sovereign-capital-image-prompts";
 export * from "./impact";
