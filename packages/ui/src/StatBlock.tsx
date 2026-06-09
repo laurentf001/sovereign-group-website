@@ -11,7 +11,7 @@ export function StatBlock({ value, label, theme = "light" }: StatBlockProps) {
   return (
     <div className="flex flex-col items-center text-center md:items-start md:text-left">
       <span className={`t-stat ${valueColor}`}>{value}</span>
-      <span className={`t-label mt-3 ${labelColor}`}>{label}</span>
+      <span className={`t-eyebrow mt-4 ${labelColor}`}>{label}</span>
     </div>
   );
 }
@@ -24,7 +24,7 @@ export function StatRow({
   theme?: "dark" | "light";
 }) {
   return (
-    <div className="grid grid-cols-2 gap-12 md:grid-cols-4 md:gap-8">
+    <div className="grid grid-cols-2 gap-16 md:grid-cols-4 md:gap-12">
       {stats.map((stat) => (
         <StatBlock key={stat.label} {...stat} theme={theme} />
       ))}

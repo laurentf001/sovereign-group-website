@@ -36,7 +36,7 @@ export const collaboratingPartners: ConsortiumEntity[] = [
     name: "Fedgroup",
     role: "Financial Collaborator · Retirement 24Seven · R30B AUM",
     description:
-      "One of South Africa's most respected independent financial services groups. Fedgroup collaborates with Retirement 24Seven on selected life rights development projects — providing institutional-grade funding capacity, long-term capital commitment, and the financial stability required for large-scale phased developments.",
+      "One of South Africa's most respected independent financial services groups. Fedgroup collaborates with Retirement 24Seven on selected life rights development projects, providing institutional-grade funding capacity, long-term capital commitment, and the financial stability required for large-scale phased developments.",
   },
 ];
 

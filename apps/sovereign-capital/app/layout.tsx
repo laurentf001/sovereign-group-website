@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sovereign Capital — Capital with Conscience",
+    default: "Sovereign Capital · Capital with Conscience",
     template: "%s · Sovereign Capital",
   },
   description:

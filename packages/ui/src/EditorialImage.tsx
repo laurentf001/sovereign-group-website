@@ -1,7 +1,4 @@
-"use client";
-
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { EditorialImageFrame } from "./EditorialImageFrame";
 
 type OverlayTone = "dark" | "navy" | "none";
 type AspectRatio = "cinematic" | "wide" | "tall";
@@ -33,28 +30,22 @@ export function EditorialImageBreak({
   src,
   alt,
   caption,
-  overlay = "dark",
+  overlay = "navy",
   aspect = "cinematic",
   priority = false,
   className = "",
 }: EditorialImageBreakProps) {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+    <section
       className={`relative w-full overflow-hidden ${className}`}
       aria-label={caption ?? alt}
     >
-      <div className={`relative ${aspectClasses[aspect]}`}>
-        <Image
+      <div className={`relative overflow-hidden bg-navy ${aspectClasses[aspect]}`}>
+        <EditorialImageFrame
           src={src}
           alt={alt}
-          fill
           priority={priority}
           sizes="100vw"
-          className="object-cover object-center"
         />
         <div className={`absolute inset-0 ${overlayClasses[overlay]}`} />
         <div className="grain-overlay pointer-events-none absolute inset-0 opacity-40" />
@@ -66,7 +57,7 @@ export function EditorialImageBreak({
           </div>
         )}
       </div>
-    </motion.section>
+    </section>
   );
 }
 
@@ -83,20 +74,20 @@ export function EditorialImagePanel({
   src,
   alt,
   position = "right",
-  overlay = "dark",
+  overlay = "navy",
   className = "",
 }: EditorialImagePanelProps) {
   return (
     <div
-      className={`relative min-h-[320px] overflow-hidden md:min-h-full md:min-h-[520px] ${
+      className={`relative min-h-[320px] overflow-hidden bg-navy md:min-h-full md:min-h-[520px] ${
         position === "left" ? "md:order-first" : ""
       } ${className}`}
     >
-      <Image
+      <EditorialImageFrame
         src={src}
         alt={alt}
-        fill
         sizes="(max-width: 768px) 100vw, 50vw"
+        frameClassName="absolute inset-0 min-h-[320px] md:min-h-[520px]"
         className="object-cover object-center"
       />
       <div className={`absolute inset-0 ${overlayClasses[overlay]}`} />

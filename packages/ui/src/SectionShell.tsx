@@ -1,15 +1,15 @@
-"use client";
-
-import { motion } from "framer-motion";
 import type { ReactNode } from "react";
 
 export type SectionTheme = "dark" | "light";
+export type SectionVariant = "contained" | "fullBleed" | "statement";
 
 interface SectionShellProps {
   theme: SectionTheme;
   children: ReactNode;
   className?: string;
   id?: string;
+  variant?: SectionVariant;
+  /** @deprecated Use variant="fullBleed" instead */
   fullBleed?: boolean;
 }
 
@@ -18,22 +18,24 @@ export function SectionShell({
   children,
   className = "",
   id,
+  variant,
   fullBleed = false,
 }: SectionShellProps) {
+  const resolvedVariant = variant ?? (fullBleed ? "fullBleed" : "contained");
+
+  const innerClass =
+    resolvedVariant === "fullBleed"
+      ? "w-full"
+      : resolvedVariant === "statement"
+        ? "mx-auto max-w-statement px-6 text-center md:px-8"
+        : "mx-auto max-w-content px-6 md:px-8";
+
   return (
     <section
       id={id}
-      className={`py-16 md:py-24 ${theme === "dark" ? "navy-surface text-ivory" : "cream-surface text-navy"} ${className}`}
+      className={`py-32 md:py-40 ${theme === "dark" ? "navy-surface text-ivory" : "cream-surface text-navy"} ${className}`}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-        className={fullBleed ? "w-full" : "mx-auto max-w-content px-6 md:px-8"}
-      >
-        {children}
-      </motion.div>
+      <div className={innerClass}>{children}</div>
     </section>
   );
 }

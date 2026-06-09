@@ -1,5 +1,5 @@
 export { SectionShell } from "./SectionShell";
-export type { SectionTheme } from "./SectionShell";
+export type { SectionTheme, SectionVariant } from "./SectionShell";
 export { SectionRule } from "./SectionRule";
 export { PullQuote } from "./PullQuote";
 export { StatBlock, StatRow } from "./StatBlock";
@@ -22,3 +22,10 @@ export { ContactBlock, PageHero, ProseSection } from "./ContactBlock";
 export { SovereignNav } from "./SovereignNav";
 export type { SiteVariant } from "./SovereignNav";
 export { SovereignFooter } from "./SovereignFooter";
+export { SiloLogo } from "./SiloLogo";
+export { ImagePlaceholder, ImagePanelPlaceholder } from "./ImagePlaceholder";
+export { EditorialSplitHero } from "./EditorialSplitHero";
+export { TextLink } from "./TextLink";
+export { ProgrammeCard } from "./ProgrammeCard";
+export { fadeUp, imageScale } from "./motion";
+export { EditorialImageFrame } from "./EditorialImageFrame";

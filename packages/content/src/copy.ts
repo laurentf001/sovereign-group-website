@@ -1,7 +1,6 @@
 export const sovereignCapitalCopy = {
   hero: {
     tagline: ["Capital with conscience.", "Care with authority."],
-    locations: "Somerset West · Stellenbosch · Mauritius",
   },
   stats: [
     { value: "R9B+", label: "Life Rights Sales" },
@@ -13,11 +12,11 @@ export const sovereignCapitalCopy = {
     label: "WHO WE ARE",
     headline: "A private capital group built for the long horizon",
     paragraphs: [
-      "Sovereign Capital is the institutional holding entity and master brand of a specialist group operating at the intersection of senior living development, structured finance, and life rights advisory. We are based in Somerset West, Western Cape, with active mandates extending to Mauritius.",
-      "We structure, fund, and operate life rights retirement villages across the Western Cape and beyond — partnering with landowners, family offices, REITs, and developers who want institutional-grade execution without surrendering long-term control of their assets.",
+      "Sovereign Capital is the institutional holding entity and master brand of a specialist group operating at the intersection of senior living development, structured finance, and life rights advisory. We are based in the Western Cape, with active mandates extending to Mauritius.",
+      "We structure, fund, and operate life rights retirement villages across the Western Cape and beyond, partnering with landowners, family offices, REITs, and developers who want institutional-grade execution without surrendering long-term control of their assets.",
     ],
     pullQuote:
-      "We are asset custodians and operators — not short-cycle developers.",
+      "We are asset custodians and operators, not short-cycle developers.",
     pullQuoteFollowUp:
       "The life rights model, when ethically applied, creates a compounding, perpetual income engine for the asset owner while delivering genuine security and community to residents. This alignment of interests is why we focus on it exclusively.",
     marketContext:
@@ -25,14 +24,14 @@ export const sovereignCapitalCopy = {
   },
   businessUnits: {
     label: "THE GROUP",
-    headline: "Four disciplines. One coordinated structure.",
+    headline: "Five disciplines. One coordinated structure.",
   },
   consortium: {
     label: "CONSORTIUM",
     headline: "Four entities. Institutional from the start.",
   },
   contact: {
-    pullQuote: "Conversations begin quietly.",
+    pullQuote: "Conversations begin quietly",
   },
   about: {
     headline: "Group identity, structure, and philosophy",
@@ -42,18 +41,18 @@ export const sovereignCapitalCopy = {
       regions: [
         {
           name: "South Africa",
-          body: "Our primary market. Active projects span the Winelands, the Atlantic Seaboard, the Garden Route, and the Cape West Coast — concentrated in the Western Cape's semi-gration corridor where the structural case for premium life rights is strongest. Sovereign Capital's principal office is in Somerset West.",
+          body: "Our primary market. Active projects span the Winelands, the Atlantic Seaboard, the Garden Route, and the Cape West Coast, concentrated in the Western Cape's semi-gration corridor where the structural case for premium life rights is strongest.",
         },
         {
           name: "Mauritius",
-          body: "We hold a signed mandate with Ferney Limited (Luke Maurel) for Mauritius' first Life Right retirement village within the Ferney Smart City — a landmark development addressing a market with 282 retirement units serving a rapidly ageing population of 184,000 seniors. Senior Living Fund (Pty) Ltd leads this mandate.",
+          body: "We hold a signed mandate with Ferney Limited (Luke Maurel) for Mauritius' first Life Right retirement village within the Ferney Smart City, a landmark development addressing a market with 282 retirement units serving a rapidly ageing population of 184,000 seniors. Senior Living Fund (Pty) Ltd leads this mandate.",
         },
       ],
     },
   },
   leadership: {
-    label: "LEADERSHIP",
-    headline: "The principals behind the consortium.",
+    label: "LEADERSHIP & CONTACT",
+    headline: "The principals behind the group",
   },
 };
 

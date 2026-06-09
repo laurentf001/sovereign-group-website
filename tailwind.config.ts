@@ -22,6 +22,8 @@ const config: Config = {
       },
       maxWidth: {
         content: "1200px",
+        prose: "640px",
+        statement: "800px",
       },
     },
   },

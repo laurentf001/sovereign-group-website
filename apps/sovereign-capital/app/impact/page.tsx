@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { businessUnits } from "@sovereign/content";
-import { BusinessUnitPage } from "../_components/BusinessUnitPage";
+import { ImpactPage } from "../_components/ImpactPage";
 
 const unit = businessUnits.find((u) => u.slug === "impact")!;
 
@@ -9,6 +9,6 @@ export const metadata: Metadata = {
   description: unit.proposition,
 };
 
-export default function ImpactPage() {
-  return <BusinessUnitPage slug="impact" />;
+export default function ImpactRoute() {
+  return <ImpactPage />;
 }

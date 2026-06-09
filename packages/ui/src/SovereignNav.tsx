@@ -14,13 +14,12 @@ interface NavLink {
 
 const sovereignCapitalLinks: NavLink[] = [
   { href: "/about", label: "About" },
-  { href: "/living", label: "Living" },
   { href: "/developments", label: "Developments" },
+  { href: "/living", label: "Senior Living" },
   { href: "/money", label: "Money" },
+  { href: "/private-equity", label: "Private Equity" },
   { href: "/impact", label: "Impact" },
-  { href: "/consortium", label: "Consortium" },
   { href: "/leadership", label: "Leadership" },
-  { href: "/contact", label: "Contact" },
 ];
 
 const retirement247Links: NavLink[] = [
@@ -55,19 +54,28 @@ export function SovereignNav({ variant }: SovereignNavProps) {
     };
   }, [mobileOpen]);
 
+  const isSc = variant === "sovereign-capital";
   const navBg = scrolled
-    ? "border-b border-ivory/10 navy-surface backdrop-blur-sm"
+    ? isSc
+      ? "border-b border-gold/30 bg-navy/90 backdrop-blur-sm"
+      : "border-b border-ivory/10 navy-surface backdrop-blur-sm"
     : "bg-transparent";
+
+  const navPadding = isSc ? "py-3" : "py-5";
+  const scNavLinkClass =
+    "group relative block text-center t-eyebrow text-[11px] leading-snug tracking-[0.2em] text-ivory transition-colors hover:text-gold";
 
   return (
     <>
       <header
         className={`fixed left-0 right-0 top-0 z-50 transition-colors duration-300 ${navBg}`}
       >
-        <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-5 md:px-8">
+        <nav
+          className={`mx-auto flex max-w-content items-center gap-6 px-6 md:px-8 ${navPadding}`}
+        >
           <Link
             href="/"
-            className="flex items-center gap-3 text-ivory"
+            className="flex shrink-0 items-center gap-3 text-ivory"
             onClick={() => setMobileOpen(false)}
           >
             <SovereignEmblem
@@ -89,7 +97,7 @@ export function SovereignNav({ variant }: SovereignNavProps) {
             )}
           </Link>
 
-          <ul className="hidden items-center gap-8 lg:flex">
+          <ul className="hidden flex-1 flex-wrap items-center justify-end gap-x-5 gap-y-2 lg:flex xl:gap-x-7">
             {links.map((link, index) => {
               const isCta =
                 variant === "retirement247" &&
@@ -97,7 +105,7 @@ export function SovereignNav({ variant }: SovereignNavProps) {
                 link.href === "/contact";
 
               return (
-                <li key={link.href}>
+                <li key={link.href} className="flex justify-center">
                   {isCta ? (
                     <Link
                       href={link.href}
@@ -106,7 +114,10 @@ export function SovereignNav({ variant }: SovereignNavProps) {
                       {link.label}
                     </Link>
                   ) : (
-                    <NavLinkItem link={link} />
+                    <NavLinkItem
+                      link={link}
+                      className={isSc ? scNavLinkClass : navLinkClassName}
+                    />
                   )}
                 </li>
               );
@@ -159,7 +170,13 @@ export function SovereignNav({ variant }: SovereignNavProps) {
 const navLinkClassName =
   "group relative t-label text-ivory transition-colors hover:text-gold";
 
-function NavLinkItem({ link }: { link: NavLink }) {
+function NavLinkItem({
+  link,
+  className,
+}: {
+  link: NavLink;
+  className: string;
+}) {
   const underline = (
     <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
   );
@@ -170,7 +187,7 @@ function NavLinkItem({ link }: { link: NavLink }) {
         href={link.href}
         target="_blank"
         rel="noopener noreferrer"
-        className={navLinkClassName}
+        className={className}
       >
         {link.label}
         {underline}
@@ -179,7 +196,7 @@ function NavLinkItem({ link }: { link: NavLink }) {
   }
 
   return (
-    <Link href={link.href} className={navLinkClassName}>
+    <Link href={link.href} className={className}>
       {link.label}
       {underline}
     </Link>

@@ -4,11 +4,24 @@ import type { SectionTheme } from "./SectionShell";
 interface PullQuoteProps {
   children: ReactNode;
   theme?: SectionTheme;
+  size?: "default" | "display";
 }
 
-export function PullQuote({ children, theme = "light" }: PullQuoteProps) {
+export function PullQuote({
+  children,
+  theme = "light",
+  size = "default",
+}: PullQuoteProps) {
   const border = theme === "dark" ? "border-gold" : "border-bronze";
   const text = theme === "dark" ? "text-ivory" : "text-navy";
+
+  if (size === "display") {
+    return (
+      <blockquote className={`t-pullquote text-center ${text}`}>
+        {children}
+      </blockquote>
+    );
+  }
 
   return (
     <blockquote

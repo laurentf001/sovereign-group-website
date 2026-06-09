@@ -1,16 +1,8 @@
 export const sovereignCapitalContact = {
   pullQuote:
     "We are deploying patient capital into carefully curated life rights assets across the Western Cape and Mauritius. The fundamentals are structural. The timing is now.",
-  address: {
-    label: "Principal Office",
-    lines: [
-      "6 Elektron Road, Techno Park",
-      "Stellenbosch, Western Cape",
-      "South Africa",
-    ],
-  },
-  managingDirector: {
-    label: "Managing Director",
+  director: {
+    label: "Director",
     name: "Gavin Vickers",
     email: "gavin@sovereigncapital.co.za",
   },
@@ -22,7 +14,6 @@ export const sovereignCapitalContact = {
   ctaTitle: "Partner with us",
   ctaBody:
     "We work with landowners with generational ambitions, developers seeking institutional co-investment, funds building senior living portfolios, and capital providers looking for structurally sound long-duration assets. If your horizon is long and your standards are high, the conversation is worth having.",
-  locations: "Somerset West · Stellenbosch · Mauritius",
 };
 
 export const retirement247Contact = {

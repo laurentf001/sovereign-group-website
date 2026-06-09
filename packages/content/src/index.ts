@@ -5,3 +5,5 @@ export * from "./business-units";
 export * from "./contact";
 export * from "./copy";
 export * from "./retirement247-images";
+export * from "./sovereign-capital-images";
+export * from "./impact";
